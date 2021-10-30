@@ -6,6 +6,7 @@
 
 body {
   height: 100vh;
+  overflow: hidden;
   background: url("../assets/home/background-home-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -187,11 +188,115 @@ main .text p {
   line-height: 32px;
 }
 
+.hamburger{
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   body {
     background: url("../assets/home/background-home-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .logo{
+    margin-left: 39px;
+  }
+
+  .divisor{
+    display: none;
+  }
+
+  nav {
+    width: 450px;
+  }
+
+  nav ul{
+    margin-left: 48px;
+    margin-right: 46px;
+  }
+
+  nav ul li:first-child{
+    margin-left: 0;
+    margin-right: 37px;
+  }
+
+  nav ul li:nth-child(2){
+    margin-left: 0;
+    margin-right: 42px;
+  }
+
+  nav ul li:nth-child(3){
+    margin-left: 0;
+    margin-right: 37px;
+  }
+
+  nav ul li:last-child{
+    margin: 0;
+  }
+
+  nav ul li a {
+    letter-spacing: 2.36px;
+    font-size: 14px;
+  }
+
+  nav ul li a strong{
+    display: none;
+  }
+
+  .destination-link:not(.active):hover::after {
+    width: 80px;
+  }
+  
+  .crew-link:not(.active):hover::after {
+    width: 30.5px;
+  }
+  
+  .technology-link:not(.active):hover::after {
+    width: 75px;
+  }
+
+  header{
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  main{
+    flex-direction: column;
+    position: static;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .explore{
+    position: static;
+    width: 242px;
+    height: 242px;
+    margin-top: 156px;
+  }
+
+  main .text {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+    margin-top: 106px;
+  }
+
+  main .text h1{
+    margin-top: 24px;
+    font-size: 160px;
+  }
+
+  main .text h2{
+    font-size: 20px;
+    letter-spacing: 3.38px;
+  }
+
+  main .text p{
+    font-size: 16px;
+    margin-top: 24px;
+    line-height: 28px;
   }
 }
 
@@ -200,5 +305,58 @@ main .text p {
     background: url("../assets/home/background-home-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .logo{
+    margin: 0;
+  }
+
+  header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  nav{
+    display: none;
+  }
+
+  .hamburger{
+    display: block;
+  }
+
+  .explore{
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+    letter-spacing: 1.25px;
+    margin-top: 81px;
+  }
+
+  main .text {
+    margin-top: 48px;
+  }
+
+  main .text h1{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 80px;
+    line-height: 100px;
+    letter-spacing: 0;
+  }
+
+  main .text h2{
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+
+  main .text p{
+    width: 327px;
+    line-height: 25px;
+    font-size: 15px;
+    letter-spacing: 0;
   }
 }
