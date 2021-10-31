@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  overflow-y: scroll;
+  background: url("../assets/destination/background-destination-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-left: 55px;
+}
+
+.logo {
+  margin-right: 64px;
+}
+
+.divisor {
+  position: relative;
+}
+
+.divisor::after {
+  content: "";
+  width: 625px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1px;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+nav {
+  margin-left: auto;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(15px);
+  width: 950px;
+  z-index: 9;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-right: 165px;
+  margin-left: 123px;
+}
+
+nav ul li {
+  margin: 0 48px;
+}
+
+nav ul li:last-child {
+  margin-right: 165px;
+}
+
+nav ul li:first-child {
+  margin-left: 123px;
+}
+
+nav ul li a {
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  display: flex;
+  transition: 0.2s ease;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  height: 96px;
+  letter-spacing: 2.7px;
+  text-decoration: none;
+}
+
+nav ul li a strong {
+  margin-right: 12px;
+}
+
+.nav-link {
+  text-align: center;
+  position: relative;
+}
+
+.nav-link.active::after {
+  left: 0;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+.nav-link:hover {
+  transition: 0.2s ease;
+}
+
+.nav-link:not(.active):hover::after {
+  left: 0;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 130px;
+  height: 3px;
+  background-color: #979797;
+}
+
+.home-link:not(.active):hover::after {
+  width: 75px;
+}
+
+.destination-link:not(.active):hover::after {
+  width: 121px;
+}
+
+.crew-link:not(.active):hover::after {
+  width: 70px;
+}
+
+.technology-link:not(.active):hover::after {
+  width: 120px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.title {
+  font-size: 26px;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 4.72px;
+  color: white;
+  margin-left: 166.5px;
+  margin-top: 76px;
+}
+
+.title strong {
+  opacity: 25%;
+  margin-right: 28px;
+}
+
+main .info {
+  margin-left: 165.5px;
+  margin-top: 156px;
+}
+
+main .info h2 {
+  font-size: 32px;
+  font-family: "Bellefair", serif;
+  opacity: 50%;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+main .info h1 {
+  font-size: 56px;
+  font-family: "Bellefair", serif;
+  color: white;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+main .info p {
+  width: 444px;
+  height: 128px;
+  font-size: 18px;
+  color: #d0d6f9;
+  font-family: "Barlow", sans-serif;
+}
+
+main {
+  align-items: center;
+  display: flex;
+}
+
+main .image {
+  margin-left: 81.5px;
+  height: 100%;
+}
+
+main .choose-crew-buttons {
+  margin-top: 120px;
+  margin-bottom: 95px;
+}
+
+main .choose-crew-buttons .choose-crew-button {
+  border: 0;
+  background: none;
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+main .choose-crew-button .choose-crew-ball {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 17%;
+}
+
+main .choose-crew-buttons .choose-crew-button.active .choose-crew-ball {
+  background: #fff;
+  opacity: 100%;
+}
+
+main .choose-crew-buttons .choose-crew-button:first-child {
+  margin-left: 0;
+}
+
+main .choose-crew-buttons .choose-crew-button:last-child {
+  margin-right: 0;
+}

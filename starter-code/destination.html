@@ -66,27 +66,29 @@
 
       <div class="star-info">
         <ul class="choose-star">
-          <li><a href="#" onclick="chooseStar('Moon')">Moon</a></li>
-          <li><a href="#" onclick="chooseStar('Mars')">Mars</a></li>
-          <li><a href="#" onclick="chooseStar('Europa')">Europa</a></li>
-          <li><a href="#" onclick="chooseStar('Titan')">Titan</a></li>
+          <li><a class="choose-star-button" onclick="chooseStar('Moon')">Moon</a></li>
+          <li><a class="choose-star-button" onclick="chooseStar('Mars')">Mars</a></li>
+          <li><a class="choose-star-button" onclick="chooseStar('Europa')">Europa</a></li>
+          <li><a class="choose-star-button" onclick="chooseStar('Titan')">Titan</a></li>
         </ul>
 
-        <h1 id="star-name">Moon</h1>
+        <h1 id="star-name"></h1>
 
-        <p id="star-description">lalalalal</p>
+        <p id="star-description"></p>
 
-        <div class="info-divisor"></div>
+        <div class="star-divisor"></div>
 
-        <div class="average-distance">
-          Avg. distance
-          <span id="star-distance">628 mil. km</span>
-        </div>
-
-        <div class="travel-time">
-          Est. travel time
-          <span id="star-travel-time">3 years</span>
-        </div>
+        <section class="star-distance-and-travel-time">
+          <div class="average-distance">
+            Avg. distance
+            <span id="star-distance"></span>
+          </div>
+  
+          <div class="travel-time">
+            Est. travel time
+            <span id="star-travel-time"></span>
+          </div>
+        </section>
       </div>
     </main>
 
