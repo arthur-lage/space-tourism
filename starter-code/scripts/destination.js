@@ -55,6 +55,8 @@ const starDescription = document.querySelector("#star-description");
 const starDistance = document.querySelector("#star-distance");
 const starTravelTime = document.querySelector("#star-travel-time");
 
+const infoWrapper = document.querySelector(".info-wrapper")
+
 const chooseStar = (star) => {
   chooseStarButton.forEach(starButton => {
     starButton.classList.remove("active")
@@ -68,6 +70,8 @@ const chooseStar = (star) => {
 
   const starIndex = data.destinations.findIndex((item) => item.name == star);
 
+    infoWrapper.classList.add("anim")
+
   starImage.src = data.destinations[starIndex].images.png;
   starImage.alt = data.destinations[starIndex].name;
   starName.innerHTML = data.destinations[starIndex].name;
@@ -75,6 +79,10 @@ const chooseStar = (star) => {
   starDistance.innerHTML = data.destinations[starIndex].distance;
   starTravelTime.innerHTML = data.destinations[starIndex].travel;
 };
+
+infoWrapper.addEventListener("animationend", () => {
+  infoWrapper.classList.remove("anim")
+})
 
 window.addEventListener("load", () => {
   chooseStarButton.forEach(starButton => {
