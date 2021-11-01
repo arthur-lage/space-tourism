@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.anim{
+    animation: fade .75s ease 1 forwards normal;
+}
+
 body {
   min-height: 100vh;
   overflow: hidden;
@@ -23,12 +27,12 @@ header {
   margin-right: 64px;
 }
 
-.divisor{
+.divisor {
   position: relative;
 }
 
 .divisor::after {
-  content: '';
+  content: "";
   width: 625px;
   position: absolute;
   left: 0;
@@ -188,12 +192,12 @@ main .text p {
   line-height: 32px;
 }
 
-.hamburger{
+.hamburger {
   display: none;
 }
 
 @media screen and (max-width: 1366px) {
-  .divisor::after{
+  .divisor::after {
     width: 280px;
   }
 
@@ -201,20 +205,26 @@ main .text p {
     top: 250px;
   }
 
-  main .text h2{
+  main .text h2 {
     font-size: 22px;
   }
 
-  main .text h1{
+  main .text h1 {
     font-size: 125px;
   }
 
-  main .text p{
+  main .text p {
     font-size: 18px;
   }
 
   .explore {
     right: 125px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    width: 100%;
   }
 }
 
@@ -225,11 +235,11 @@ main .text p {
     background-size: cover;
   }
 
-  .logo{
+  .logo {
     margin-left: 39px;
   }
 
-  .divisor{
+  .divisor {
     display: none;
   }
 
@@ -237,27 +247,27 @@ main .text p {
     width: 450px;
   }
 
-  nav ul{
+  nav ul {
     margin-left: 48px;
     margin-right: 46px;
   }
 
-  nav ul li:first-child{
+  nav ul li:first-child {
     margin-left: 0;
     margin-right: 37px;
   }
 
-  nav ul li:nth-child(2){
+  nav ul li:nth-child(2) {
     margin-left: 0;
     margin-right: 42px;
   }
 
-  nav ul li:nth-child(3){
+  nav ul li:nth-child(3) {
     margin-left: 0;
     margin-right: 37px;
   }
 
-  nav ul li:last-child{
+  nav ul li:last-child {
     margin: 0;
   }
 
@@ -266,35 +276,35 @@ main .text p {
     font-size: 14px;
   }
 
-  nav ul li a strong{
+  nav ul li a strong {
     display: none;
   }
 
   .destination-link:not(.active):hover::after {
     width: 80px;
   }
-  
+
   .crew-link:not(.active):hover::after {
     width: 30.5px;
   }
-  
+
   .technology-link:not(.active):hover::after {
     width: 75px;
   }
 
-  header{
+  header {
     padding-top: 0;
     padding-left: 0;
   }
 
-  main{
+  main {
     flex-direction: column;
     position: static;
     justify-content: center;
     align-items: center;
   }
 
-  .explore{
+  .explore {
     position: static;
     width: 242px;
     height: 242px;
@@ -309,17 +319,17 @@ main .text p {
     margin-top: 106px;
   }
 
-  main .text h1{
+  main .text h1 {
     margin-top: 24px;
     font-size: 160px;
   }
 
-  main .text h2{
+  main .text h2 {
     font-size: 20px;
     letter-spacing: 3.38px;
   }
 
-  main .text p{
+  main .text p {
     font-size: 16px;
     margin-top: 24px;
     line-height: 28px;
@@ -333,28 +343,28 @@ main .text p {
     background-size: cover;
   }
 
-  .logo{
+  .logo {
     margin: 0;
   }
 
-  header{
+  header {
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     padding-top: 24px;
     padding-left: 24px;
     padding-right: 24px;
   }
 
-  nav{
+  nav {
     display: none;
   }
 
-  .hamburger{
+  .hamburger {
     display: block;
   }
 
-  .explore{
+  .explore {
     width: 150px;
     height: 150px;
     font-size: 20px;
@@ -366,7 +376,7 @@ main .text p {
     margin-top: 48px;
   }
 
-  main .text h1{
+  main .text h1 {
     margin-top: 16px;
     margin-bottom: 16px;
     font-size: 80px;
@@ -374,15 +384,34 @@ main .text p {
     letter-spacing: 0;
   }
 
-  main .text h2{
+  main .text h2 {
     font-size: 16px;
     letter-spacing: 2.7px;
   }
 
-  main .text p{
+  main .text p {
     width: 327px;
     line-height: 25px;
     font-size: 15px;
     letter-spacing: 0;
   }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background: rgb(86, 59, 223);
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }

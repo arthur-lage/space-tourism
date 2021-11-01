@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.anim {
+  animation: fade 0.75s ease 1 forwards normal;
+}
+
 body {
   min-height: 100vh;
   overflow-y: scroll;
@@ -270,7 +274,7 @@ main #star-travel-time {
     width: 280px;
   }
 
-  .title{
+  .title {
     font-size: 24px;
     margin-top: 40px;
     margin-left: 55px;
@@ -281,7 +285,7 @@ main #star-travel-time {
     margin-left: 170px;
   }
 
-  main .star-image-wrapper img{
+  main .star-image-wrapper img {
     width: 350px;
     height: 350px;
   }
@@ -290,19 +294,19 @@ main #star-travel-time {
     margin-bottom: 32px;
   }
 
-  main .star-info .choose-star li a{
+  main .star-info .choose-star li a {
     font-size: 14px;
   }
 
-  main .star-info #star-name{
+  main .star-info #star-name {
     font-size: 85px;
   }
 
-  main .star-info #star-description{
+  main .star-info #star-description {
     font-size: 18px;
   }
 
-  main .star-info .star-divisor{
+  main .star-info .star-divisor {
     margin: 30px 0;
   }
 
@@ -407,5 +411,24 @@ main #star-travel-time {
 
   .hamburger {
     display: block;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background: rgb(86, 59, 223);
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
   }
 }

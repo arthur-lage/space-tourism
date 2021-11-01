@@ -1,32 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./styles/technology.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <div class="anim">
+      <header>
+        <div class="logo">
+          <img src="./assets/shared/logo.svg" alt="Logo" />
+        </div>
+        <div class="divisor"></div>
+        <nav>
+          <ul>
+            <li>
+              <a class="nav-link home-link" href="./index.html"
+                ><strong>00</strong> Home</a
+              >
+            </li>
+            <li>
+              <a class="nav-link destination-link" href="./destination.html"
+                ><strong>01</strong> Destination</a
+              >
+            </li>
+            <li>
+              <a class="nav-link crew-link" href="./crew.html"
+                ><strong>02</strong> Crew</a
+              >
+            </li>
+            <li>
+              <a class="active nav-link technology-link" href="./technology.html"
+                ><strong>03</strong> Technology</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="hamburger">
+          <img src="./assets/shared/icon-hamburger.svg" alt="Open menu" />
+        </div>
+      </header>
   
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+      <div class="title"><strong>03</strong> Space launch 101</div>
+  
+      <main>
+        <div class="choose-technology-wrapper">
+          <button
+            onclick="chooseTechnology(0); makeActive(this)"
+            class="choose-technology active"
+          >
+            1
+          </button>
+          <button
+            onclick="chooseTechnology(1); makeActive(this)"
+            class="choose-technology"
+          >
+            2
+          </button>
+          <button
+            onclick="chooseTechnology(2); makeActive(this)"
+            class="choose-technology"
+          >
+            3
+          </button>
+        </div>
+  
+        <div class="tech-information">
+          <h2>The terminology...</h2>
+          <h1 id="technology-name">Space capsule</h1>
+          <p id="technology-description">
+            A space capsule is an often-crewed spacecraft that uses a blunt-body
+            reentry capsule to reenter the Earth's atmosphere without wings. Our
+            capsule is where you'll spend your time during the flight. It includes
+            a space gym, cinema, and plenty of other activities to keep you
+            entertained.
+          </p>
+        </div>
+  
+        <div class="image">
+          <img
+            id="technology-image"
+            src="./assets/technology/image-launch-vehicle-landscape.jpg"
+            alt="Launch Vehicle"
+          />
+        </div>
+      </main>
+    </div>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  03 Space launch 101
-
-  1
-  2
-  3
-
-  The terminology...
-  Space capsule
-
-  A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
-  capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
-  you'll spend your time during the flight. It includes a space gym, cinema, 
-  and plenty of other activities to keep you entertained.
-</body>
+    <script src="./scripts/technology.js"></script>
+  </body>
 </html>

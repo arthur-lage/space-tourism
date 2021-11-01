@@ -17,80 +17,98 @@
     <link rel="stylesheet" href="./styles/destination.css" />
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="./assets/shared/logo.svg" alt="Logo" />
-      </div>
-      <div class="divisor"></div>
-      <nav>
-        <ul>
-          <li>
-            <a class="nav-link home-link" href="./index.html"
-              ><strong>00</strong> Home</a
-            >
-          </li>
-          <li>
-            <a
-              class="active nav-link destination-link"
-              href="./destination.html"
-              ><strong>01</strong> Destination</a
-            >
-          </li>
-          <li>
-            <a class="nav-link crew-link" href="./crew.html"
-              ><strong>02</strong> Crew</a
-            >
-          </li>
-          <li>
-            <a class="nav-link technology-link" href="./technology.html"
-              ><strong>03</strong> Technology</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <div class="hamburger">
-        <img src="./assets/shared/icon-hamburger.svg" alt="Open menu" />
-      </div>
-    </header>
+    <div class="anim">
+      <header>
+        <div class="logo">
+          <img src="./assets/shared/logo.svg" alt="Logo" />
+        </div>
+        <div class="divisor"></div>
+        <nav>
+          <ul>
+            <li>
+              <a class="nav-link home-link" href="./index.html"
+                ><strong>00</strong> Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="active nav-link destination-link"
+                href="./destination.html"
+                ><strong>01</strong> Destination</a
+              >
+            </li>
+            <li>
+              <a class="nav-link crew-link" href="./crew.html"
+                ><strong>02</strong> Crew</a
+              >
+            </li>
+            <li>
+              <a class="nav-link technology-link" href="./technology.html"
+                ><strong>03</strong> Technology</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="hamburger">
+          <img src="./assets/shared/icon-hamburger.svg" alt="Open menu" />
+        </div>
+      </header>
 
-    <div class="title"><strong>01</strong> Pick your destination</div>
+      <div class="title"><strong>01</strong> Pick your destination</div>
 
-    <main>
-      <div class="star-image-wrapper">
-        <img
-          id="star-image"
-          src="./assets/destination/image-moon.png"
-          alt="Moon"
-        />
-      </div>
+      <main>
+        <div class="star-image-wrapper">
+          <img
+            id="star-image"
+            src="./assets/destination/image-moon.png"
+            alt="Moon"
+          />
+        </div>
 
-      <div class="star-info">
-        <ul class="choose-star">
-          <li><a class="choose-star-button" onclick="chooseStar('Moon')">Moon</a></li>
-          <li><a class="choose-star-button" onclick="chooseStar('Mars')">Mars</a></li>
-          <li><a class="choose-star-button" onclick="chooseStar('Europa')">Europa</a></li>
-          <li><a class="choose-star-button" onclick="chooseStar('Titan')">Titan</a></li>
-        </ul>
+        <div class="star-info">
+          <ul class="choose-star">
+            <li>
+              <a class="choose-star-button" onclick="chooseStar('Moon')"
+                >Moon</a
+              >
+            </li>
+            <li>
+              <a class="choose-star-button" onclick="chooseStar('Mars')"
+                >Mars</a
+              >
+            </li>
+            <li>
+              <a class="choose-star-button" onclick="chooseStar('Europa')"
+                >Europa</a
+              >
+            </li>
+            <li>
+              <a class="choose-star-button" onclick="chooseStar('Titan')"
+                >Titan</a
+              >
+            </li>
+          </ul>
 
-        <h1 id="star-name"></h1>
+          <h1 id="star-name"></h1>
 
-        <p id="star-description"></p>
+          <p id="star-description"></p>
 
-        <div class="star-divisor"></div>
+          <div class="star-divisor"></div>
 
-        <section class="star-distance-and-travel-time">
-          <div class="average-distance">
-            Avg. distance
-            <span id="star-distance"></span>
-          </div>
-  
-          <div class="travel-time">
-            Est. travel time
-            <span id="star-travel-time"></span>
-          </div>
-        </section>
-      </div>
-    </main>
+          <section class="star-distance-and-travel-time">
+            <div class="average-distance">
+              Avg. distance
+              <span id="star-distance"></span>
+            </div>
+
+            <div class="travel-time">
+              Est. travel time
+              <span id="star-travel-time"></span>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
 
     <script src="./scripts/destination.js"></script>
   </body>
