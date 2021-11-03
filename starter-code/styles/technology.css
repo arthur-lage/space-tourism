@@ -17,6 +17,10 @@ body {
   background-size: cover;
 }
 
+.nav-mobile{
+  display: none;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -83,6 +87,7 @@ nav ul li a {
   transition: 0.2s ease;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
   font-weight: 400;
   height: 96px;
   letter-spacing: 2.7px;
