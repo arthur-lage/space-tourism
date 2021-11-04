@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 
-.anim{
-    animation: fade .75s ease 1 forwards normal;
+.anim {
+  animation: fade 0.75s ease 1 forwards normal;
 }
 
 body {
@@ -17,7 +17,7 @@ body {
   background-size: cover;
 }
 
-.nav-mobile{
+.nav-mobile {
   display: none;
 }
 
@@ -250,6 +250,69 @@ main .tech-information p {
   body {
     background: url("../assets/technology/background-technology-mobile.jpg");
   }
+
+  .nav-mobile {
+    position: fixed;
+    display: block;
+    right: 0;
+    top: 0;
+    transition: 0.2s ease;
+    height: 100vh;
+    width: 0;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(8px);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .nav-mobile.active {
+    width: 254px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-mobile ul {
+    list-style: none;
+    margin-top: 118px;
+    padding-left: 32px;
+  }
+
+  .nav-mobile ul li {
+    margin-bottom: 32px;
+  }
+
+  .nav-mobile ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  .nav-mobile ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    display: flex;
+    transition: 0.2s ease;
+    text-transform: uppercase;
+    align-items: center;
+    font-weight: 400;
+    height: 31px;
+    position: relative;
+    letter-spacing: 2.7px;
+  }
+
+  .nav-mobile ul li a strong {
+    margin-right: 14px;
+  }
+
+  .nav-mobile ul li a.active::after {
+    right: 0;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 4px;
+    height: 31px;
+    background-color: white;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -261,12 +324,12 @@ main .tech-information p {
   background: rgb(86, 59, 223);
 }
 
-@keyframes fade{
-    0%{
-        opacity: 0;
-    }
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
 
-    100%{
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }

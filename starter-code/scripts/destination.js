@@ -70,7 +70,7 @@ const chooseStar = (star) => {
 
   const starIndex = data.destinations.findIndex((item) => item.name == star);
 
-    infoWrapper.classList.add("anim")
+  infoWrapper.classList.add("anim")
 
   starImage.src = data.destinations[starIndex].images.png;
   starImage.alt = data.destinations[starIndex].name;

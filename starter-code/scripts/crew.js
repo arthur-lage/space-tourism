@@ -46,16 +46,24 @@ const crewImage = document.querySelector("#crew-image");
 
 const chooseCrewButtons = document.querySelectorAll(".choose-crew-button");
 
+const infoWrapper = document.querySelector(".info")
+
 const chooseCrewPerson = (index) => {
   chooseCrewButtons.forEach((button) => {
     button.classList.remove("active");
   });
+
+  infoWrapper.classList.add("anim")
 
   crewRole.innerHTML = data.crew[index].role;
   crewName.innerHTML = data.crew[index].name;
   crewDescription.innerHTML = data.crew[index].bio;
   crewImage.src = data.crew[index].images.png;
 };
+
+infoWrapper.addEventListener("animationend", () => {
+  infoWrapper.classList.remove("anim")
+})
 
 window.addEventListener("load", () => {
   crewRole.innerHTML = data.crew[0].role;

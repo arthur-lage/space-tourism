@@ -174,6 +174,7 @@ main .star-image-wrapper {
 main .star-info .choose-star {
   list-style: none;
   display: flex;
+  z-index: 10;
   margin-bottom: 52px;
 }
 
@@ -382,6 +383,47 @@ main #star-travel-time {
     padding-top: 0;
     padding-left: 0;
   }
+
+  main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .title{
+    margin-left: 38.5px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    letter-spacing: 3.38px;
+    font-size: 20px;
+  }
+
+  main .star-image-wrapper{
+    margin: 0 0 53px 0;
+  }
+  
+  main .star-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  main .star-info #star-description{
+    width: 573px;
+    height: 84px;
+    line-height: 28px;
+  }
+
+  main .star-info .star-divisor{
+    margin-top: 49px;
+    margin-bottom: 29px;
+    width: 573px;
+  }
+
+  main .star-distance-and-travel-time{
+    justify-content: space-evenly;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -409,6 +451,7 @@ main #star-travel-time {
     display: block;
     right: 0;
     top: 0;
+    z-index: 20;
     transition: 0.2s ease;
     height: 100vh;
     width: 0;
@@ -472,7 +515,71 @@ main #star-travel-time {
   }
 
   .hamburger {
+    z-index: 21;
     display: block;
+  }
+
+  main .star-distance-and-travel-time{
+    display: flex;
+    flex-direction: column;
+    align-items: centers;
+  }
+
+  main .star-image-wrapper{
+    margin-bottom: 26px;
+  }
+
+  main .star-image-wrapper img{
+    width: 170px;
+    height: 170px;
+  }
+
+  main .star-info .choose-star{
+    margin-bottom: 20px;
+  }
+
+  main .star-info #star-name{
+    font-size: 56px;
+    margin-bottom: 6px;
+  }
+
+  main .star-info #star-description{
+    width: 327px;
+    font-size: 15px;
+    line-height: 25px;
+    height: 125px;
+  }
+
+  main .star-info .star-divisor{
+    width: 327px;
+  }
+
+  main .star-distance-and-travel-time .average-distance {
+    margin-bottom: 32px;
+    margin-right: 0;
+  }
+
+  .title{
+    margin-left: 0;
+    display: flex;
+    margin-top: 24px;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+  
+  .title strong{
+    margin-right: 18px;
+  }
+
+  main .star-info .choose-star li {
+    margin-right: 26px;
+    margin-left: 0;
+  }
+  
+  main .star-info .choose-star li:last-child {
+    margin-right: 0;
   }
 }
 

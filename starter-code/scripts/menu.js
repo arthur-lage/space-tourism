@@ -9,10 +9,11 @@ hamburger.addEventListener("click", () => {
         menuIsOpen = true
         hamburgerImage.src = './assets/shared/icon-close.svg'
         mobileNavbar.classList.add("active")
-        
+        document.body.style.overflow = "hidden"
     } else {
         menuIsOpen = false
         hamburgerImage.src = './assets/shared/icon-hamburger.svg'
         mobileNavbar.classList.remove("active")
+        document.body.style.overflow = "auto"
     }
 })

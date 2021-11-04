@@ -243,6 +243,83 @@ main .choose-crew-buttons .choose-crew-button:last-child {
 }
 
 @media screen and (max-width: 375px) {
+  nav {
+    display: none;
+  }
+
+  header{
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    justify-content: space-between
+  }
+
+  .hamburger{
+    display: block;
+    z-index: 26;
+  }
+
+  .divisor{
+    display: none;
+  }
+
+  .title{
+    display: flex;
+    text-transform: uppercase;
+    margin: 24px 0 0 0;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    justify-content: center;
+  }
+
+  .title strong{
+    margin-right: 18px;
+  }
+
+  main{
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  main .image{
+    margin-left: 0;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    position: relative;
+  }
+
+  main .image img{
+    height: 275px;;
+  }
+
+  main .image::after{
+    content: '';
+    width: 327px;
+    height: 1px;
+    background: #383B4B;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  main .info{
+    margin-top: 0;
+    margin-left: 0;
+    text-align: center;
+    flex-direction: column-reverse;
+    display: flex;
+    align-items: center;
+  }
+
+  main .info #crew-description{
+    width: 327px;
+    height: 100px;
+    line-height: 25px;
+    font-size: 15px;
+  }
+
   .nav-mobile {
     position: fixed;
     display: block;
@@ -250,6 +327,7 @@ main .choose-crew-buttons .choose-crew-button:last-child {
     top: 0;
     transition: 0.2s ease;
     height: 100vh;
+    z-index: 25;
     width: 0;
     background: rgba(0, 0, 0, 0.95);
     backdrop-filter: blur(8px);
@@ -304,6 +382,29 @@ main .choose-crew-buttons .choose-crew-button:last-child {
     width: 4px;
     height: 31px;
     background-color: white;
+  }
+
+  main #crew-role{
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  main #crew-name{
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  main #crew-description{
+    width: 327px;
+    height: 100px;
+    line-height: 25px;
+    font-size: 15px;
+  }
+
+  main .choose-crew-buttons{
+    margin-top: 0;
+    display: flex;
+    margin-bottom: 32px;
   }
 }
 
