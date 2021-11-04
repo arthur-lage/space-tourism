@@ -36,20 +36,40 @@ const technologyName = document.querySelector("#technology-name");
 const technologyDescription = document.querySelector("#technology-description");
 const technologyImage = document.querySelector("#technology-image");
 
+const infoWrapper = document.querySelector(".tech-information");
+
 const chooseTechnology = (index) => {
   chooseTechnologyButtons.forEach((button) => {
     button.classList.remove("active");
   });
 
+  infoWrapper.classList.add("anim");
+
   technologyName.innerHTML = data.technology[index].name;
   technologyDescription.innerHTML = data.technology[index].description;
-  technologyImage.src = data.technology[index].images.portrait;
+  technologyImage.alt = data.technology[index].name;
+
+  if (window.screen.width == 375) {
+    technologyImage.src = data.technology[index].images.landscape;
+  } else {
+    technologyImage.src = data.technology[index].images.portrait;
+  }
 };
+
+infoWrapper.addEventListener("animationend", () => {
+  infoWrapper.classList.remove("anim");
+});
 
 window.addEventListener("load", () => {
   technologyName.innerHTML = data.technology[0].name;
   technologyDescription.innerHTML = data.technology[0].description;
-  technologyImage.src = data.technology[0].images.portrait;
+  technologyImage.alt = data.technology[0].name;
+
+  if (window.screen.width == 375 || window.screen.width == 768) {
+    technologyImage.src = data.technology[0].images.landscape;
+  } else {
+    technologyImage.src = data.technology[0].images.portrait;
+  }
 });
 
 const makeActive = (e) => {

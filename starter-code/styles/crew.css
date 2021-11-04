@@ -242,7 +242,17 @@ main .choose-crew-buttons .choose-crew-button:last-child {
   }
 }
 
+@media screen and (max-width: 768px) {
+  body{
+    background-image: url("../assets/crew/background-crew-tablet.jpg");
+  }
+}
+
 @media screen and (max-width: 375px) {
+  body{
+    background-image: url("../assets/crew/background-crew-mobile.jpg");
+  }
+
   nav {
     display: none;
   }
@@ -397,6 +407,7 @@ main .choose-crew-buttons .choose-crew-button:last-child {
   main #crew-description{
     width: 327px;
     height: 100px;
+    margin-bottom: 105px;
     line-height: 25px;
     font-size: 15px;
   }
