@@ -387,6 +387,8 @@ main .tech-information p {
   }
 
   main .tech-information{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     margin-right: 0;
     align-items: center;
