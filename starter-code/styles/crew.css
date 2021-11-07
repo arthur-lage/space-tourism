@@ -151,6 +151,7 @@ nav ul li a strong {
   font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 4.72px;
   color: white;
+  text-transform: uppercase;
   margin-left: 166.5px;
   margin-top: 76px;
 }
@@ -245,6 +246,119 @@ main .choose-crew-buttons .choose-crew-button:last-child {
 @media screen and (max-width: 768px) {
   body{
     background-image: url("../assets/crew/background-crew-tablet.jpg");
+  }
+
+  header{
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+
+  nav {
+    width: 450px;
+  }
+
+  nav ul {
+    margin-left: 48px;
+    margin-right: 46px;
+  }
+
+  nav ul li:first-child {
+    margin-left: 0;
+    margin-right: 37px;
+  }
+
+  nav ul li:nth-child(2) {
+    margin-left: 0;
+    margin-right: 42px;
+  }
+
+  nav ul li:nth-child(3) {
+    margin-left: 0;
+    margin-right: 37px;
+  }
+
+  nav ul li:last-child {
+    margin: 0;
+  }
+
+  nav ul li a {
+    letter-spacing: 2.36px;
+    font-size: 14px;
+  }
+
+  nav ul li a strong {
+    display: none;
+  }
+
+  .destination-link:not(.active):hover::after {
+    width: 80px;
+  }
+
+  .crew-link:not(.active):hover::after {
+    width: 30.5px;
+  }
+
+  .technology-link:not(.active):hover::after {
+    width: 75px;
+  }
+
+  .logo{
+    margin-left: 39px;
+    margin-top: 24px;
+  }
+  
+  .divisor{
+    display: none;
+  }
+
+  main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .title{
+    margin-top: 40px;
+    margin-left: 38.5px;
+    font-size: 20px;
+    letter-spacing: 3.38px;
+  }
+
+  main .info{
+    margin-left: 0;
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  main .info #crew-role{
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  main .info .crew-name{
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+
+  main .info #crew-description{
+    font-size: 16px;
+    line-height: 28px;
+    width: 458px;
+    height: 84px;
+  }
+
+  main .info .choose-crew-buttons{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  main .image{
+    margin-left: 0;
+  }
+
+  main .image img{
+    height: 572px;
   }
 }
 

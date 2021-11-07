@@ -46,14 +46,14 @@ const crewImage = document.querySelector("#crew-image");
 
 const chooseCrewButtons = document.querySelectorAll(".choose-crew-button");
 
-const infoWrapper = document.querySelector(".info")
+const mainWrapper = document.querySelector("main")
 
 const chooseCrewPerson = (index) => {
   chooseCrewButtons.forEach((button) => {
     button.classList.remove("active");
   });
 
-  infoWrapper.classList.add("anim")
+  mainWrapper.classList.add("anim")
 
   crewRole.innerHTML = data.crew[index].role;
   crewName.innerHTML = data.crew[index].name;
@@ -61,8 +61,8 @@ const chooseCrewPerson = (index) => {
   crewImage.src = data.crew[index].images.png;
 };
 
-infoWrapper.addEventListener("animationend", () => {
-  infoWrapper.classList.remove("anim")
+mainWrapper.addEventListener("animationend", () => {
+  mainWrapper.classList.remove("anim")
 })
 
 window.addEventListener("load", () => {

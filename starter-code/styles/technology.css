@@ -148,6 +148,7 @@ nav ul li a strong {
   font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 4.72px;
   color: white;
+  text-transform: uppercase;
   margin-left: 166.5px;
   margin-top: 76px;
   margin-bottom: 27px;
@@ -244,6 +245,140 @@ main .tech-information p {
   body {
     background-image: url("../assets/technology/background-technology-tablet.jpg");
   }
+
+  .divisor {
+    display: none;
+  }
+
+  .title {
+    margin-left: 38.5px;
+    margin-bottom: 60px;
+    font-size: 20px;
+    letter-spacing: 3.38px;
+  }
+
+  header {
+    padding-top: 0;
+    padding-left: 0;
+  }
+  
+  nav {
+    width: 450px;
+  }
+
+  nav ul {
+    margin-left: 48px;
+    margin-right: 46px;
+  }
+
+  nav ul li:first-child {
+    margin-left: 0;
+    margin-right: 37px;
+  }
+
+  nav ul li:nth-child(2) {
+    margin-left: 0;
+    margin-right: 42px;
+  }
+
+  nav ul li:nth-child(3) {
+    margin-left: 0;
+    margin-right: 37px;
+  }
+
+  nav ul li:last-child {
+    margin: 0;
+  }
+
+  nav ul li a {
+    letter-spacing: 2.36px;
+    font-size: 14px;
+  }
+
+  .destination-link:not(.active):hover::after {
+    width: 80px;
+  }
+
+  .crew-link:not(.active):hover::after {
+    width: 30.5px;
+  }
+
+  .technology-link:not(.active):hover::after {
+    width: 75px;
+  }
+
+  nav ul li a strong {
+    display: none;
+  }
+
+  main .choose-technology-wrapper {
+    order: 2;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+    margin-bottom: 44px;
+  }
+
+  main .choose-technology-wrapper .choose-technology {
+    margin-bottom: 0;
+    margin-right: 16px;
+    width: 60px;
+    letter-spacing: 1.5;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  main .choose-technology-wrapper .choose-technology:last-child {
+    margin-right: 0;
+  }
+
+  main .tech-information {
+    order: 3;
+  }
+
+  main .image {
+    order: 1;
+    margin-bottom: 56px;
+  }
+
+  main .image img {
+    width: 100vw;
+    height: 310px;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  main .tech-information {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 0;
+    align-items: center;
+  }
+
+  main .tech-information h2 {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    margin-bottom: 16px;
+  }
+
+  main .tech-information #technology-name {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+
+  main .tech-information #technology-description {
+    font-size: 16px;
+    margin-right: 0;
+    line-height: 28px;
+    width: 458px;
+    height: 140px;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -255,22 +390,22 @@ main .tech-information p {
     display: none;
   }
 
-  .divisor{
+  .divisor {
     display: none;
   }
 
-  .hamburger{
+  .hamburger {
     display: block;
   }
 
-  header{
+  header {
     padding-left: 24px;
     padding-top: 24px;
     padding-right: 24px;
     justify-content: space-between;
   }
 
-  .title{
+  .title {
     display: flex;
     margin-left: 0;
     margin-top: 24px;
@@ -345,7 +480,7 @@ main .tech-information p {
     background-color: white;
   }
 
-  main .choose-technology-wrapper{
+  main .choose-technology-wrapper {
     order: 2;
     flex-direction: row;
     justify-content: center;
@@ -354,7 +489,7 @@ main .tech-information p {
     margin-bottom: 26px;
   }
 
-  main .choose-technology-wrapper .choose-technology{
+  main .choose-technology-wrapper .choose-technology {
     margin-bottom: 0;
     margin-right: 16px;
     width: 40px;
@@ -362,15 +497,15 @@ main .tech-information p {
     font-size: 16px;
   }
 
-  main .choose-technology-wrapper .choose-technology:last-child{
+  main .choose-technology-wrapper .choose-technology:last-child {
     margin-right: 0;
   }
 
-  main .tech-information{
+  main .tech-information {
     order: 3;
   }
 
-  main .image{
+  main .image {
     order: 1;
     margin-bottom: 34px;
   }
@@ -386,7 +521,7 @@ main .tech-information p {
     flex-direction: column;
   }
 
-  main .tech-information{
+  main .tech-information {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -394,18 +529,19 @@ main .tech-information p {
     align-items: center;
   }
 
-  main .tech-information h2{
+  main .tech-information h2 {
     font-size: 14px;
     letter-spacing: 2.36px;
     margin-bottom: 9px;
   }
 
-  main .tech-information #technology-name{
+  main .tech-information #technology-name {
     font-size: 24px;
     margin-bottom: 16px;
+    width: 327px;
   }
-  
-  main .tech-information #technology-description{
+
+  main .tech-information #technology-description {
     font-size: 15px;
     margin-right: 0;
     line-height: 25px;

@@ -49,7 +49,7 @@ const chooseTechnology = (index) => {
   technologyDescription.innerHTML = data.technology[index].description;
   technologyImage.alt = data.technology[index].name;
 
-  if (window.screen.width == 375) {
+  if (window.screen.width == 375 || window.screen.width == 768) {
     technologyImage.src = data.technology[index].images.landscape;
   } else {
     technologyImage.src = data.technology[index].images.portrait;
