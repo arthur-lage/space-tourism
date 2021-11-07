@@ -127,6 +127,10 @@ nav ul li a strong {
   background-color: #979797;
 }
 
+.home-link:not(.active):hover::after {
+  width: 75px;
+}
+
 .destination-link:not(.active):hover::after {
   width: 121px;
 }
@@ -190,6 +194,7 @@ main .choose-technology-wrapper .choose-technology {
 main .choose-technology-wrapper .choose-technology:first-child {
   margin-top: 0px;
 }
+
 main .choose-technology-wrapper .choose-technology:last-child {
   margin-bottom: 0px;
 }
