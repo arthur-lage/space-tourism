@@ -378,6 +378,10 @@ main .choose-crew-buttons .choose-crew-button:last-child {
     justify-content: space-between
   }
 
+  .logo{
+    margin: 0;
+  }
+
   .hamburger{
     display: block;
     z-index: 26;
