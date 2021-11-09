@@ -362,6 +362,181 @@ main .choose-crew-buttons .choose-crew-button:last-child {
   }
 }
 
+@media screen and (max-width: 425px) {
+  body{
+    background-image: url("../assets/crew/background-crew-mobile.jpg");
+  }
+
+  nav {
+    display: none;
+  }
+
+  header{
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    justify-content: space-between
+  }
+
+  .logo{
+    margin: 0;
+  }
+
+  .hamburger{
+    display: block;
+    z-index: 26;
+  }
+
+  .divisor{
+    display: none;
+  }
+
+  .title{
+    display: flex;
+    text-transform: uppercase;
+    margin: 24px 0 0 0;
+    font-size: 20px;
+    letter-spacing: 2.7px;
+    justify-content: center;
+  }
+
+  .title strong{
+    margin-right: 18px;
+  }
+
+  main{
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  main .image{
+    margin-left: 0;
+    margin-top: 54px;
+    margin-bottom: 32px;
+    position: relative;
+  }
+
+  main .image img{
+    height: 300px;
+  }
+
+  main .image::after{
+    content: '';
+    width: 327px;
+    height: 1px;
+    background: #383B4B;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  main .info{
+    margin-top: 0;
+    margin-left: 0;
+    text-align: center;
+    flex-direction: column-reverse;
+    display: flex;
+    align-items: center;
+  }
+
+  main .info #crew-description{
+    width: 327px;
+    height: 100px;
+    line-height: 25px;
+    font-size: 18px;
+  }
+
+  .nav-mobile {
+    position: fixed;
+    display: block;
+    right: 0;
+    top: 0;
+    transition: 0.2s ease;
+    height: 100vh;
+    z-index: 25;
+    width: 0;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(8px);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .nav-mobile.active {
+    width: 254px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-mobile ul {
+    list-style: none;
+    margin-top: 118px;
+    padding-left: 32px;
+  }
+
+  .nav-mobile ul li {
+    margin-bottom: 32px;
+  }
+
+  .nav-mobile ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  .nav-mobile ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    display: flex;
+    transition: 0.2s ease;
+    text-transform: uppercase;
+    align-items: center;
+    font-weight: 400;
+    height: 31px;
+    position: relative;
+    letter-spacing: 2.7px;
+  }
+
+  .nav-mobile ul li a strong {
+    margin-right: 14px;
+  }
+
+  .nav-mobile ul li a.active::after {
+    right: 0;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 4px;
+    height: 31px;
+    background-color: white;
+  }
+
+  main #crew-role{
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  main #crew-name{
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  main #crew-description{
+    width: 327px;
+    height: 100px;
+    margin-bottom: 105px;
+    line-height: 25px;
+    font-size: 15px;
+  }
+
+  main .choose-crew-buttons{
+    margin-top: 0;
+    display: flex;
+    margin-bottom: 32px;
+  }
+}
+
 @media screen and (max-width: 375px) {
   body{
     background-image: url("../assets/crew/background-crew-mobile.jpg");

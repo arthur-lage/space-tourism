@@ -433,6 +433,164 @@ main #star-travel-time {
   }
 }
 
+@media screen and (max-width: 425px) {
+  body {
+    background: url("../assets/destination/background-destination-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .nav-mobile {
+    position: fixed;
+    display: block;
+    right: 0;
+    top: 0;
+    z-index: 20;
+    transition: 0.2s ease;
+    height: 100vh;
+    width: 0;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(8px);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .nav-mobile.active {
+    width: 254px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-mobile ul {
+    list-style: none;
+    margin-top: 118px;
+    padding-left: 32px;
+  }
+
+  .nav-mobile ul li {
+    margin-bottom: 32px;
+  }
+
+  .nav-mobile ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  .nav-mobile ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    display: flex;
+    transition: 0.2s ease;
+    text-transform: uppercase;
+    align-items: center;
+    font-weight: 400;
+    height: 31px;
+    position: relative;
+    letter-spacing: 2.7px;
+  }
+
+  .nav-mobile ul li a strong {
+    margin-right: 14px;
+  }
+
+  .nav-mobile ul li a.active::after {
+    right: 0;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 4px;
+    height: 31px;
+    background-color: white;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .hamburger {
+    z-index: 21;
+    display: block;
+  }
+
+  main .star-distance-and-travel-time{
+    display: flex;
+    flex-direction: column;
+    align-items: centers;
+  }
+
+  main .star-image-wrapper{
+    margin-bottom: 26px;
+  }
+
+  main .star-image-wrapper img{
+    width: 170px;
+    height: 170px;
+  }
+
+  main .star-info .choose-star{
+    margin-bottom: 20px;
+  }
+
+  main .star-info #star-name{
+    font-size: 56px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  main .star-info #star-description{
+    width: 327px;
+    font-size: 15px;
+    line-height: 25px;
+    height: 125px;
+  }
+
+  main .star-info .star-divisor{
+    width: 327px;
+  }
+
+  main .star-distance-and-travel-time .average-distance {
+    margin-bottom: 32px;
+    margin-right: 0;
+  }
+
+  .title{
+    margin-left: 0;
+    display: flex;
+    margin-top: 24px;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+  
+  .title strong{
+    margin-right: 18px;
+  }
+
+  main .star-info .choose-star li {
+    margin-right: 26px;
+    margin-left: 0;
+  }
+  
+  main .star-info .choose-star li:last-child {
+    margin-right: 0;
+  }
+}
+
 @media screen and (max-width: 375px) {
   body {
     background: url("../assets/destination/background-destination-mobile.jpg");
