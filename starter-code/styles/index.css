@@ -464,6 +464,21 @@ main .text p {
     font-size: 15px;
     letter-spacing: 0;
   }
+
+  .explore:hover {
+    box-shadow: 0px 0px 0px 40px rgb(255, 255, 255, 0.1);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main .text h1{
+    font-size: 65px;
+  }
+  
+  main .text p{
+    width: 275px;
+    line-height: 22px;
+  }
 }
 
 ::-webkit-scrollbar {

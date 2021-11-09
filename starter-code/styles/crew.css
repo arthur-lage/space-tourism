@@ -537,6 +537,28 @@ main .choose-crew-buttons .choose-crew-button:last-child {
   }
 }
 
+@media screen and (max-width: 320px) {
+  main .info #crew-role{
+    font-size: 20px;
+  }
+
+  main .info #crew-name{
+    font-size: 24px;
+  }
+  
+  main .info #crew-description{
+    width: 300px;
+  }
+
+  main .image img {
+    height: 250px;
+  }
+
+  main .image::after{
+    width: 275px;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }

@@ -410,6 +410,12 @@ main #star-travel-time {
     text-align: center;
   }
 
+  main .star-info .info-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
   main .star-info #star-description{
     width: 573px;
     height: 84px;
@@ -581,6 +587,20 @@ main #star-travel-time {
   
   main .star-info .choose-star li:last-child {
     margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main .star-info #star-description {
+    width: 300px;
+  }
+
+  main .star-info #star-name{
+    font-size: 55px;
+  }
+
+  main .star-info .star-divisor{
+    width: 300px;
   }
 }
 

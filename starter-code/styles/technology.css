@@ -266,7 +266,7 @@ main .tech-information p {
     padding-top: 0;
     padding-left: 0;
   }
-  
+
   nav {
     width: 450px;
   }
@@ -401,6 +401,7 @@ main .tech-information p {
 
   .hamburger {
     display: block;
+    z-index: 22;
   }
 
   header {
@@ -552,6 +553,18 @@ main .tech-information p {
     line-height: 25px;
     width: 327px;
     height: 175px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main .tech-information #technology-name {
+    width: 300px;
+  }
+
+  main .tech-information #technology-description {
+    width: 300px;
+    font-size: 14px;
+    margin-bottom: 50px;
   }
 }
 
