@@ -276,6 +276,16 @@ main #star-travel-time {
   font-family: "Bellefair", serif;
 }
 
+@media screen and (max-width: 1440px) {
+  .divisor::after{
+    width: 360px;
+  }
+
+  main {
+    margin-bottom: 50px;
+  }
+}
+
 @media screen and (max-width: 1366px) {
   .divisor::after {
     width: 280px;
@@ -313,6 +323,52 @@ main #star-travel-time {
 
   main {
     padding-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    width: 100%;
+  }
+
+  .divisor::after {
+    width: 100px;
+    left: -25px;
+  }
+
+  nav ul {
+    width: 800px;
+    margin: 0;
+  }
+
+  nav ul li {
+    margin: 0 32px;
+  }
+
+  .title {
+    margin-left: 60px;
+    font-size: 22px;
+  }
+
+  main .star-image-wrapper {
+    margin-left: 60px;
+  }
+
+  main .star-image-wrapper img {
+    width: 300px;
+    height: 300px;
+  }
+
+  main .star-info .info-wrapper #star-name{
+    font-size: 52px;
+  }
+
+  main .star-info .info-wrapper #star-description{
+    font-size: 16px;
+  }
+
+  main .star-info .info-wrapper .star-divisor{
+    margin: 20px 0;
   }
 }
 
@@ -391,7 +447,7 @@ main #star-travel-time {
     flex-direction: column;
   }
 
-  .title{
+  .title {
     margin-left: 38.5px;
     text-transform: uppercase;
     margin-bottom: 60px;
@@ -399,10 +455,10 @@ main #star-travel-time {
     font-size: 20px;
   }
 
-  main .star-image-wrapper{
+  main .star-image-wrapper {
     margin: 0 0 53px 0;
   }
-  
+
   main .star-info {
     display: flex;
     align-items: center;
@@ -410,25 +466,25 @@ main #star-travel-time {
     text-align: center;
   }
 
-  main .star-info .info-wrapper{
+  main .star-info .info-wrapper {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
 
-  main .star-info #star-description{
+  main .star-info #star-description {
     width: 573px;
     height: 84px;
     line-height: 28px;
   }
 
-  main .star-info .star-divisor{
+  main .star-info .star-divisor {
     margin-top: 49px;
     margin-bottom: 29px;
     width: 573px;
   }
 
-  main .star-distance-and-travel-time{
+  main .star-distance-and-travel-time {
     justify-content: space-evenly;
   }
 }
@@ -526,39 +582,39 @@ main #star-travel-time {
     display: block;
   }
 
-  main .star-distance-and-travel-time{
+  main .star-distance-and-travel-time {
     display: flex;
     flex-direction: column;
     align-items: centers;
   }
 
-  main .star-image-wrapper{
+  main .star-image-wrapper {
     margin-bottom: 26px;
   }
 
-  main .star-image-wrapper img{
+  main .star-image-wrapper img {
     width: 170px;
     height: 170px;
   }
 
-  main .star-info .choose-star{
+  main .star-info .choose-star {
     margin-bottom: 20px;
   }
 
-  main .star-info #star-name{
+  main .star-info #star-name {
     font-size: 56px;
     margin-bottom: 15px;
     margin-top: 15px;
   }
 
-  main .star-info #star-description{
+  main .star-info #star-description {
     width: 327px;
     font-size: 15px;
     line-height: 25px;
     height: 125px;
   }
 
-  main .star-info .star-divisor{
+  main .star-info .star-divisor {
     width: 327px;
   }
 
@@ -567,7 +623,7 @@ main #star-travel-time {
     margin-right: 0;
   }
 
-  .title{
+  .title {
     margin-left: 0;
     display: flex;
     margin-top: 24px;
@@ -576,8 +632,8 @@ main #star-travel-time {
     justify-content: center;
     margin-bottom: 32px;
   }
-  
-  .title strong{
+
+  .title strong {
     margin-right: 18px;
   }
 
@@ -585,7 +641,7 @@ main #star-travel-time {
     margin-right: 26px;
     margin-left: 0;
   }
-  
+
   main .star-info .choose-star li:last-child {
     margin-right: 0;
   }
@@ -684,38 +740,38 @@ main #star-travel-time {
     display: block;
   }
 
-  main .star-distance-and-travel-time{
+  main .star-distance-and-travel-time {
     display: flex;
     flex-direction: column;
     align-items: centers;
   }
 
-  main .star-image-wrapper{
+  main .star-image-wrapper {
     margin-bottom: 26px;
   }
 
-  main .star-image-wrapper img{
+  main .star-image-wrapper img {
     width: 170px;
     height: 170px;
   }
 
-  main .star-info .choose-star{
+  main .star-info .choose-star {
     margin-bottom: 20px;
   }
 
-  main .star-info #star-name{
+  main .star-info #star-name {
     font-size: 56px;
     margin-bottom: 6px;
   }
 
-  main .star-info #star-description{
+  main .star-info #star-description {
     width: 327px;
     font-size: 15px;
     line-height: 25px;
     height: 125px;
   }
 
-  main .star-info .star-divisor{
+  main .star-info .star-divisor {
     width: 327px;
   }
 
@@ -724,7 +780,7 @@ main #star-travel-time {
     margin-right: 0;
   }
 
-  .title{
+  .title {
     margin-left: 0;
     display: flex;
     margin-top: 24px;
@@ -733,8 +789,8 @@ main #star-travel-time {
     justify-content: center;
     margin-bottom: 32px;
   }
-  
-  .title strong{
+
+  .title strong {
     margin-right: 18px;
   }
 
@@ -742,7 +798,7 @@ main #star-travel-time {
     margin-right: 26px;
     margin-left: 0;
   }
-  
+
   main .star-info .choose-star li:last-child {
     margin-right: 0;
   }
@@ -753,11 +809,11 @@ main #star-travel-time {
     width: 300px;
   }
 
-  main .star-info #star-name{
+  main .star-info #star-name {
     font-size: 55px;
   }
 
-  main .star-info .star-divisor{
+  main .star-info .star-divisor {
     width: 300px;
   }
 }

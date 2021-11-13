@@ -237,22 +237,73 @@ main .choose-crew-buttons .choose-crew-button:last-child {
   margin-right: 0;
 }
 
+@media screen and (max-width: 1440px) {
+  .divisor::after{
+    width: 360px;
+  }
+
+  main {
+    margin-bottom: 50px;
+  }
+}
+
 @media screen and (max-width: 1366px) {
   .divisor::after {
     width: 280px;
   }
 }
 
+@media screen and (max-width: 1024px) {
+  nav {
+    width: 100%;
+  }
+
+  .divisor::after {
+    width: 100px;
+    left: -25px;
+  }
+
+  nav ul {
+    width: 800px;
+    margin: 0;
+  }
+
+  nav ul li {
+    margin: 0 32px;
+  }
+
+  .title {
+    margin-left: 60px;
+    font-size: 22px;
+  }
+
+  main .info{
+    margin-left: 60px;
+  }
+
+  main .image {
+    margin-left: 20px;
+  }
+  
+  main .image img{
+    max-width: 400px;
+    height: 450px;
+  }
+
+  main .choose-crew-buttons {
+    margin-bottom: 50px;
+  }
+}
+
 @media screen and (max-width: 768px) {
-  body{
+  body {
     background-image: url("../assets/crew/background-crew-tablet.jpg");
   }
 
-  header{
+  header {
     padding-top: 0;
     padding-left: 0;
   }
-
 
   nav {
     width: 450px;
@@ -303,67 +354,67 @@ main .choose-crew-buttons .choose-crew-button:last-child {
     width: 75px;
   }
 
-  .logo{
+  .logo {
     margin-left: 39px;
     margin-top: 24px;
   }
-  
-  .divisor{
+
+  .divisor {
     display: none;
   }
 
-  main{
+  main {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
 
-  .title{
+  .title {
     margin-top: 40px;
     margin-left: 38.5px;
     font-size: 20px;
     letter-spacing: 3.38px;
   }
 
-  main .info{
+  main .info {
     margin-left: 0;
     margin-top: 60px;
     text-align: center;
   }
 
-  main .info #crew-role{
+  main .info #crew-role {
     font-size: 24px;
     margin-bottom: 8px;
   }
 
-  main .info .crew-name{
+  main .info .crew-name {
     font-size: 40px;
     margin-bottom: 16px;
   }
 
-  main .info #crew-description{
+  main .info #crew-description {
     font-size: 16px;
     line-height: 28px;
     width: 458px;
     height: 84px;
   }
 
-  main .info .choose-crew-buttons{
+  main .info .choose-crew-buttons {
     margin-top: 40px;
     margin-bottom: 40px;
   }
 
-  main .image{
+  main .image {
     margin-left: 0;
   }
 
-  main .image img{
+  main .image img {
     height: 572px;
   }
 }
 
 @media screen and (max-width: 425px) {
-  body{
+  body {
     background-image: url("../assets/crew/background-crew-mobile.jpg");
   }
 
@@ -371,27 +422,27 @@ main .choose-crew-buttons .choose-crew-button:last-child {
     display: none;
   }
 
-  header{
+  header {
     padding-top: 24px;
     padding-left: 24px;
     padding-right: 24px;
-    justify-content: space-between
+    justify-content: space-between;
   }
 
-  .logo{
+  .logo {
     margin: 0;
   }
 
-  .hamburger{
+  .hamburger {
     display: block;
     z-index: 26;
   }
 
-  .divisor{
+  .divisor {
     display: none;
   }
 
-  .title{
+  .title {
     display: flex;
     text-transform: uppercase;
     margin: 24px 0 0 0;
@@ -400,39 +451,39 @@ main .choose-crew-buttons .choose-crew-button:last-child {
     justify-content: center;
   }
 
-  .title strong{
+  .title strong {
     margin-right: 18px;
   }
 
-  main{
+  main {
     display: flex;
     align-items: center;
     flex-direction: column-reverse;
   }
 
-  main .image{
+  main .image {
     margin-left: 0;
     margin-top: 54px;
     margin-bottom: 32px;
     position: relative;
   }
 
-  main .image img{
+  main .image img {
     height: 300px;
   }
 
-  main .image::after{
-    content: '';
+  main .image::after {
+    content: "";
     width: 327px;
     height: 1px;
-    background: #383B4B;
+    background: #383b4b;
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
-  main .info{
+  main .info {
     margin-top: 0;
     margin-left: 0;
     text-align: center;
@@ -441,7 +492,7 @@ main .choose-crew-buttons .choose-crew-button:last-child {
     align-items: center;
   }
 
-  main .info #crew-description{
+  main .info #crew-description {
     width: 327px;
     height: 100px;
     line-height: 25px;
@@ -512,17 +563,17 @@ main .choose-crew-buttons .choose-crew-button:last-child {
     background-color: white;
   }
 
-  main #crew-role{
+  main #crew-role {
     font-size: 16px;
     margin-bottom: 8px;
   }
-  
-  main #crew-name{
+
+  main #crew-name {
     font-size: 24px;
     margin-bottom: 16px;
   }
 
-  main #crew-description{
+  main #crew-description {
     width: 327px;
     height: 100px;
     margin-bottom: 105px;
@@ -530,7 +581,7 @@ main .choose-crew-buttons .choose-crew-button:last-child {
     font-size: 15px;
   }
 
-  main .choose-crew-buttons{
+  main .choose-crew-buttons {
     margin-top: 0;
     display: flex;
     margin-bottom: 32px;
@@ -538,7 +589,7 @@ main .choose-crew-buttons .choose-crew-button:last-child {
 }
 
 @media screen and (max-width: 375px) {
-  body{
+  body {
     background-image: url("../assets/crew/background-crew-mobile.jpg");
   }
 
@@ -546,27 +597,27 @@ main .choose-crew-buttons .choose-crew-button:last-child {
     display: none;
   }
 
-  header{
+  header {
     padding-top: 24px;
     padding-left: 24px;
     padding-right: 24px;
-    justify-content: space-between
+    justify-content: space-between;
   }
 
-  .logo{
+  .logo {
     margin: 0;
   }
 
-  .hamburger{
+  .hamburger {
     display: block;
     z-index: 26;
   }
 
-  .divisor{
+  .divisor {
     display: none;
   }
 
-  .title{
+  .title {
     display: flex;
     text-transform: uppercase;
     margin: 24px 0 0 0;
@@ -575,39 +626,39 @@ main .choose-crew-buttons .choose-crew-button:last-child {
     justify-content: center;
   }
 
-  .title strong{
+  .title strong {
     margin-right: 18px;
   }
 
-  main{
+  main {
     display: flex;
     align-items: center;
     flex-direction: column-reverse;
   }
 
-  main .image{
+  main .image {
     margin-left: 0;
     margin-top: 32px;
     margin-bottom: 32px;
     position: relative;
   }
 
-  main .image img{
-    height: 275px;;
+  main .image img {
+    height: 275px;
   }
 
-  main .image::after{
-    content: '';
+  main .image::after {
+    content: "";
     width: 327px;
     height: 1px;
-    background: #383B4B;
+    background: #383b4b;
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
-  main .info{
+  main .info {
     margin-top: 0;
     margin-left: 0;
     text-align: center;
@@ -616,7 +667,7 @@ main .choose-crew-buttons .choose-crew-button:last-child {
     align-items: center;
   }
 
-  main .info #crew-description{
+  main .info #crew-description {
     width: 327px;
     height: 100px;
     line-height: 25px;
@@ -687,17 +738,17 @@ main .choose-crew-buttons .choose-crew-button:last-child {
     background-color: white;
   }
 
-  main #crew-role{
+  main #crew-role {
     font-size: 16px;
     margin-bottom: 8px;
   }
-  
-  main #crew-name{
+
+  main #crew-name {
     font-size: 24px;
     margin-bottom: 16px;
   }
 
-  main #crew-description{
+  main #crew-description {
     width: 327px;
     height: 100px;
     margin-bottom: 105px;
@@ -705,7 +756,7 @@ main .choose-crew-buttons .choose-crew-button:last-child {
     font-size: 15px;
   }
 
-  main .choose-crew-buttons{
+  main .choose-crew-buttons {
     margin-top: 0;
     display: flex;
     margin-bottom: 32px;
@@ -713,15 +764,15 @@ main .choose-crew-buttons .choose-crew-button:last-child {
 }
 
 @media screen and (max-width: 320px) {
-  main .info #crew-role{
+  main .info #crew-role {
     font-size: 20px;
   }
 
-  main .info #crew-name{
+  main .info #crew-name {
     font-size: 24px;
   }
-  
-  main .info #crew-description{
+
+  main .info #crew-description {
     width: 300px;
   }
 
@@ -729,7 +780,7 @@ main .choose-crew-buttons .choose-crew-button:last-child {
     height: 250px;
   }
 
-  main .image::after{
+  main .image::after {
     width: 275px;
   }
 }

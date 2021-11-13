@@ -240,9 +240,58 @@ main .tech-information p {
   height: 192px;
 }
 
+@media screen and (max-width: 1440px) {
+  .divisor::after{
+    width: 360px;
+  }
+
+  main {
+    margin-bottom: 50px;
+  }
+}
+
 @media screen and (max-width: 1366px) {
   .divisor::after {
     width: 280px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    width: 100%;
+  }
+
+  .divisor::after {
+    width: 100px;
+    left: -25px;
+  }
+
+  nav ul {
+    width: 800px;
+    margin: 0;
+  }
+
+  nav ul li {
+    margin: 0 32px;
+  }
+
+  .title {
+    margin-left: 60px;
+    font-size: 22px;
+    margin-bottom: 50px;
+  }
+
+  main .choose-technology-wrapper{
+    margin-left: 60px;
+    margin-right: 40px;
+  }
+
+  main .tech-information {
+    margin-right: 60px;
+  }
+  
+  main .image img{
+    width: 100%;
   }
 }
 

@@ -201,6 +201,40 @@ main .text p {
   display: none;
 }
 
+@media screen and (max-width: 1440px) {
+  .divisor::after{
+    width: 360px;
+  }
+
+  main {
+    margin-bottom: 50px;
+  }
+
+  main .text h2 {
+    font-size: 32px;
+  }
+
+  main .text h1 {
+    font-size: 150px;
+  }
+
+  main .text p {
+    font-size: 25px;
+    width: 600px;
+  }
+
+  main .text{
+    margin-right: 200px;
+  }
+
+  .explore{
+    right: 0;
+    width: 325px;
+    height: 325px;
+    font-size: 45px;
+  }
+}
+
 @media screen and (max-width: 1366px) {
   .divisor::after {
     width: 280px;
@@ -233,7 +267,7 @@ main .text p {
   }
 
   nav{
-    width: 100vw;
+    width: 100%;
   }
 
   .divisor::after{
@@ -242,11 +276,21 @@ main .text p {
   }
 
   nav ul {
+    width: 800px;
     margin: 0;
   }
 
   nav ul li{
     margin: 0 32px;
+  }
+
+  main .text{
+    margin-right: 0;
+  }
+
+  main .explore {
+    right: 0;
+    left: 80px;
   }
 }
 
