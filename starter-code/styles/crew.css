@@ -170,6 +170,7 @@ main .info h2 {
   font-size: 32px;
   font-family: "Bellefair", serif;
   opacity: 50%;
+  font-weight: 400;
   color: white;
   text-transform: uppercase;
   margin-bottom: 15px;
@@ -179,6 +180,8 @@ main .info h1 {
   font-size: 56px;
   font-family: "Bellefair", serif;
   color: white;
+  font-weight: 400;
+
   margin-bottom: 24px;
   text-transform: uppercase;
 }

@@ -185,6 +185,7 @@ main .choose-technology-wrapper .choose-technology {
   border-radius: 50%;
   transition: 0.2s ease;
   margin-bottom: 32px;
+  font-weight: 400;
   font-family: "Bellefair", serif;
   color: #fff;
   letter-spacing: 2px;
@@ -229,6 +230,7 @@ main .tech-information h1 {
   text-transform: uppercase;
   font-family: "Bellefair", serif;
   margin-bottom: 17px;
+  font-weight: 400;
 }
 
 main .tech-information p {

@@ -146,6 +146,7 @@ nav ul li a strong {
   right: -165px;
   border: 0;
   font-family: "Bellefair", serif;
+  font-weight: 400;
   transition: 0.2s ease;
   color: #0b0d17;
   letter-spacing: 2px;
@@ -178,6 +179,7 @@ main .text h1 {
   margin-bottom: 24px;
   text-transform: uppercase;
   color: #fff;
+  font-weight: 400;
   font-family: "Bellefair", serif;
 }
 
