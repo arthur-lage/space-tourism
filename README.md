@@ -12,13 +12,15 @@ Challenge from FrontendMentor.io
 
 [Link to Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3)
 
+---
+
 # 🌆 GIFs and images
 
 <img src="./starter-code/assets/github/gif.gif">
 <div display="flex">
-    <img src="./starter-code/assets/github/screenshot-1.png">
-    <img src="./starter-code/assets/github/screenshot-2.png">
-    <img src="./starter-code/assets/github/screenshot-4.png">
+    <img width="300px" src="./starter-code/assets/github/screenshot-1.png">
+    <img width="300px" src="./starter-code/assets/github/screenshot-2.png">
+    <img width="300px" src="./starter-code/assets/github/screenshot-4.png">
 </div>
 
 # 👨‍💻👩‍💻 Use the app
