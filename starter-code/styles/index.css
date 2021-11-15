@@ -201,7 +201,7 @@ main .text p {
   display: none;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .divisor::after{
     width: 360px;
   }
