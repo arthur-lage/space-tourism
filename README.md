@@ -14,9 +14,9 @@ Challenge from FrontendMentor.io
 
 # 🌆 GIFs and images
 
-<img src="./assets/github/gif.gif">
-<img src="./assets/github/screenshot-2.png">
-<img src="./assets/github/screenshot-4.png">
+<img src="./starter-code/assets/github/gif.gif">
+<img src="./starter-code/assets/github/screenshot-2.png">
+<img src="./starter-code/assets/github/screenshot-4.png">
 
 # 👨‍💻👩‍💻 Use the app
 
