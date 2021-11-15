@@ -18,7 +18,6 @@ Challenge from FrontendMentor.io
 <div display="flex">
     <img src="./starter-code/assets/github/screenshot-1.png">
     <img src="./starter-code/assets/github/screenshot-2.png">
-    <img src="./starter-code/assets/github/screenshot-3.png">
     <img src="./starter-code/assets/github/screenshot-4.png">
 </div>
 
