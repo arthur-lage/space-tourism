@@ -15,10 +15,8 @@ Challenge from FrontendMentor.io
 # 🌆 GIFs and images
 
 <img src="./assets/github/gif.gif">
-<div display="flex">
-    <img src="./assets/github/screenshot-2.png">
-    <img src="./assets/github/screenshot-4.png">
-</div>
+<img src="./assets/github/screenshot-2.png">
+<img src="./assets/github/screenshot-4.png">
 
 # 👨‍💻👩‍💻 Use the app
 
@@ -28,7 +26,7 @@ You can access the application by clicking on the link below:
 
 # 💻 Technologies used in this project
 
-- HTML 
+- HTML
 - CSS
 - JavaScript
 
